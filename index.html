@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços Foxcloud</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    body {
+      background: linear-gradient(to bottom, #872400, #A65317);
+      color: white;
+    }
+    
+    .loader-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .loader-image {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .loader-text {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 150px 0;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+    
+    .hero.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .hero p {
+      font-size: 24px;
+    }
+    
+    .hero img {
+      width: 400px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: floating 3s infinite ease-in-out alternate;
+    }
+    
+    .service {
+      text-align: center;
+      margin-bottom: 50px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+    
+    .service.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .service img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    
+    .service img:hover {
+      transform: scale(1.1);
+    }
+    
+    .service-link {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .service-link:hover {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .btn-primary {
+      background-color: #FF9800;
+      border-color: #FF9800;
+    }
+    
+    .btn-primary:hover {
+      background-color: #F57C00;
+      border-color: #F57C00;
+    }
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    @keyframes floating {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <img src="images/path_to_loading_image.gif" alt="Loading" class="loader-image">
+    <p class="loader-text">Carregando...</p>
+  </div>
+  
+  <div class="container">
+    <div class="hero">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/path_to_braixen_image.png" alt="Braixen Mascot">
+        </div>
+        <div class="col-md-6">
+          <h3>Bem-vindo ao Servidor</h3>
+          <h1>FOXCLOUD</h1>
+          <p>Confira todos os nossos serviços oferecidos</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5000/" class="service-link">
+            <img src="images/path_to_Dashboard_icon.png" alt="Dashboard Icon">
+          </a>
+          <h3>Dashboard Completa</h3>
+          <p>Uma central de controle para gerenciar todas as atividades.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="minecraft.html" class="service-link">
+            <img src="images/path_to_Minecraft_icon.png" alt="Minecraft Icon">
+          </a>
+          <h3>Braixen's World</h3>
+          <p>Seu próprio servidor de Minecraft Java/Bedrock para jogar com os amigos.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="https://discord.io/braixen" class="service-link">
+            <img src="images/path_to_Discord_icon.gif" alt="Discord Icon">
+          </a>
+          <h3>Discord Braixen's House</h3>
+          <p>Entre para a nossa comunidade no Discord.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="https://o-braixen.github.io/Tails/" class="service-link">
+            <img src="https://o-braixen.github.io/Tails/images/nadeko-avatar.png" alt="Tails Icon">
+          </a>
+          <h3>Tails Bot</h3>
+          <p>Uma versão adaptada do Nadeko para se tornar um excelente companheiro no Discord.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5005/" class="service-link">
+            <img src="images/path_to_Emby_icon.png" alt="Emby Icon">
+          </a>
+          <h3>Streaming Pokémon</h3>
+          <p>Assista diretamente online todos os episódios de Pokémon em nossa plataforma.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5006/" class="service-link">
+            <img src="images/path_to_Azuracast_icon.png" alt="Azuracast Icon">
+          </a>
+          <h3>Rádio Online</h3>
+          <p>Gerencie sua própria rádio online.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5009/" class="service-link">
+            <img src="images/path_to_Plex_icon.png" alt="Plex Icon">
+          </a>
+          <h3>Plex Streaming</h3>
+          <p>Assista a diversos filmes e séries completamente online.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5002/" class="service-link">
+            <img src="images/path_to_Tautulli_icon.png" alt="Tautulli Icon">
+          </a>
+          <h3>Plex Dashboard</h3>
+          <p>Gerencie todos os acessos e gráficos de uso.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5010/" class="service-link">
+            <img src="images/path_to_Backup_icon.png" alt="Backup Icon">
+          </a>
+          <h3>Servidor de Backup</h3>
+          <p>Acesse o servidor de arquivos de backup da rede.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5003/" class="service-link">
+            <img src="images/path_to_Jdownload_icon.png" alt="Jdownload Icon">
+          </a>
+          <h3>JDownload Online</h3>
+          <p>Baixe e acompanhe seus downloads.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="service">
+          <a href="http://tocadaraposa.zapto.org:5020/" class="service-link">
+            <img src="images/path_to_Twibi_icon.png" alt="Twibi Icon">
+          </a>
+          <h3>Rede Twibi</h3>
+          <p>Acesse e modifique todas as configurações de rede.</p>
+        </div>
+      </div>
+      <!-- Adicione mais serviços aqui -->
+      
+    </div>
+  </div>
+  <div class="footer">
+    Desenvolvido por Braixen
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  <script>
+    // Exibir a tela de carregamento por 1,5 segundos
+    setTimeout(function() {
+      document.querySelector(".loader-container").style.display = "none";
+      
+      const hero = document.querySelector(".hero");
+      hero.style.display = "block";
+      setTimeout(function() {
+        hero.classList.add("show");
+      }, 100);
+      
+      const services = document.querySelectorAll(".service");
+      for (let i = 0; i < services.length; i++) {
+        setTimeout(function() {
+          services[i].classList.add("show");
+        }, (i + 1) * 200);
+      }
+    }, 1500);
+  </script>
+</body>
+</html>
